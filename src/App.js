@@ -26,7 +26,7 @@ export default function App() {
 	const [client, setClient] = useState(null);
 	const [channel, setChannel] = useState(null);
 
-	useEffect(() => {
+	useEffect((client) => {
 		async function init() {
 			const chatClient = StreamChat.getInstance(apiKey);
 
